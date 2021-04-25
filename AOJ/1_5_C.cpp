@@ -1,30 +1,20 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
   int h, w;
   cin >> h >> w;
-  while (h != 0)
-  {
+  while (h != 0) {
     int i, j;
-    for (i = 0; i < h; i++)
-    {
-      for (j = 0; j < w; j++)
-      {
-        if (i % 2 != 0 && j % 2 != 0)
-        {
+    for (i = 0; i < h; i++) {
+      for (j = 0; j < w; j++) {
+        if (i % 2 != 0 && j % 2 != 0) {
           cout << "#";
-        }
-        else if (i % 2 != 0 && j % 2 == 0)
-        {
+        } else if (i % 2 != 0 && j % 2 == 0) {
           cout << ".";
-        }
-        else if (i % 2 == 0 && j % 2 != 0)
-        {
+        } else if (i % 2 == 0 && j % 2 != 0) {
           cout << ".";
-        }
-        else if (i % 2 == 0 && j % 2 == 0)
+        } else if (i % 2 == 0 && j % 2 == 0)
           cout << "#";
       }
       cout << endl;
