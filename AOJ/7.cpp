@@ -1,5 +1,3 @@
-
-
 // 7_C
 #include <cstring>
 #include <iostream>
