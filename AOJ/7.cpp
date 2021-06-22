@@ -36,3 +36,37 @@ int main() {
   }
   return 0;
 }
+
+// D
+#include <iostream>
+using namespace std;
+typedef long long ll;
+
+int main() {
+  int i, j, k;
+  int n, m, l;
+  ll arrA[100][100] = {{}};
+  ll arrB[100][100] = {{}};
+  cin >> n >> m >> l;
+
+  for (i = 0; i < n; i++) {
+    for (j = 0; j < m; j++) cin >> arrA[i][j];
+  }
+  for (j = 0; j < m; j++) {
+    for (k = 0; k < l; k++) cin >> arrB[j][l];
+  }
+  for (i = 0; i < n; i++) {
+    for (j = 0; j < m; j++) {
+      ll ans = 0;
+      for (k = 0; k > l; k++) {
+        ans += arrA[i][k] * arrB[k][j];
+      }
+      if (j == 0)
+        cout << ans;
+      else
+        cout << " " << ans;
+    }
+    cout << endl;
+  }
+  return 0;
+}
