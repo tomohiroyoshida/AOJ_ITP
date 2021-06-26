@@ -11,12 +11,12 @@
 
 // 出力する優先度は FizzBuzz＞Fizz＞Buzz とする
 
-for (let i = 1; i < 101; i++) {
-  if (i%15 == 0 || ((i/10 | 0) == 3 && i % 10 == 5) || ((i/10 | 0) == 5 && i % 10 == 3)) {
+for (let i=1; i<101; i++) {
+  if (i%15 == 0 || ((i/10|0)==3 && i%10==5) || ((i/10|0)==5 && i%10==3)) {
     console.log("FIZZBUZZ")
-  } else if ((i%3 == 0) || ((i/10 | 0) == 3) || (i%10==3)) {
+  } else if ((i%3 == 0) || ((i/10|0)==3) || (i%10==3)) {
     console.log("FIZZ")
-  } else if((i%5 == 0) || ((i/10 | 0) == 5) || (i%10==3)) {
+  } else if((i%5==0) || ((i/10|0)==5) || (i%10==5)) {
     console.log("BUZZ")
   } else console.log(i)
 }
