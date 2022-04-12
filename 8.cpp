@@ -18,6 +18,7 @@ int main() {
 }
 
 // C
+// https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/8/ITP1_8_C
 
 #include<iostream>
 #include<string>
@@ -37,5 +38,19 @@ int main(){
     for(i=0; i < 26; i++) {
         cout << (char)('a'+i) << " : " << ab[i] << endl;
     }
+    return 0;
+}
+
+// D
+// https://onlinejudge.u-aizu.ac.jp/courses/lesson/2/ITP1/8/ITP1_8_D
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+    string s, p;
+    cin >> s >> p;
+    s=s+s;
+    if (s.find(p) != -1) cout << "Yes" << endl;
+    else cout << "No" << endl;
     return 0;
 }
